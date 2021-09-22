@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Area of Triangle</title>
 </head>
 <body>
-    <nav>
-        <a href="istriangle.html">Is Triangle?</a>
-        <a href="quiz.html">Triangle Quiz</a>
-        <a href="hypotenuse.html">Hypotenuse</a>
-        <a href="area.html">Area of Triangle</a>
-    </nav>
+    <div id="index-bg"> 
+        <nav>
+            <ul>
+                <li id="home"><a href="index.html">Fun With Triangles</a></li>
+                <li><a href="istriangle.html">Is Triangle?</a></li>
+                <li><a href="quiz.html">Triangle Quiz</a></li>
+                <li><a href="hypotenuse.html">Hypotenuse</a></li>
+                <li class="active"><a href="area.html">Area of Triangle</a></li>
+            </ul>
+            
+        </nav>
 
 
-    <h1>Check Area of a Triangle</h1>
-    <h2>Area of a Triangle = 1/2 (Base * Height)</h2>
+        <h1>Check Area of a Triangle</h1>
+        <h2>Area of a Triangle = 1/2 (Base * Height)</h2>
 
-    <label>Base (in cm)</label>
-    <input class="side-input" type="number"  />
-    <label>Height (in cm)</label>
-    <input class="side-input" type="number"  />
+        <label>Base (in cm)</label>
+        <input class="side-input" type="number"  />
+        <label>Height (in cm)</label>
+        <input class="side-input" type="number"  />
 
-    <button id="checkarea-btn">Check Area</button>
-    <div id="output"></div>
-    <script src="area.js"></script>
-    
+        <button id="checkarea-btn">Check Area</button>
+        <div id="output"></div>
+        <script src="area.js"></script>
+    </div>
 </body>
 </html>
