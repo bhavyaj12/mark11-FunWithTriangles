@@ -155,7 +155,7 @@ body, html {
 
 /* nav */
 
-ul {
+.upper-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -167,7 +167,7 @@ ul {
 }
 
 
-li {
+.upper-nav li {
     float: right;
     font-size: larger;
 }
@@ -178,7 +178,7 @@ li {
     font-size: 1.5rem;
 }
   
-li a {
+.upper-nav li a, .social li a {
     display: block;
     color: white;
     text-align: center;
@@ -186,8 +186,35 @@ li a {
     text-decoration: none;
 }
   
-
-  
 .active {
 background-color: black;
 }
+
+
+/* bottom nav */
+
+.social {
+    list-style-type: none;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.social ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+    font-size: larger;
+}
+
+
+
+  
