@@ -205,7 +205,6 @@ background-color: black;
 .social ul {
     list-style-type: none;
     padding-inline-start: 0px;
-    padding: 0.5rem;
     text-align: center;
 }
 
@@ -213,6 +212,10 @@ background-color: black;
     display: inline-block;
     padding: 0rem 0.5rem;
     font-size: larger;
+}
+
+.quizlinks {
+    position: relative;
 }
 
 
