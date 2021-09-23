@@ -4,7 +4,9 @@ const outputBox = document.querySelector("#output");
 
 const ansKey = ["isosceles", "one obtuse angle", "right triangle", "Yes", "Yes", "25°", "120°", "scalene", "obtuse", "30, 45"];
 
-function calculateScore() {
+
+function calculateScore(event) {
+    event.preventDefault();
     let score = 0;
     let index = 0;
     const formResults = new FormData(quizForm);
@@ -16,6 +18,7 @@ function calculateScore() {
     }
                                 
     outputBox.innerText = "Quiz over! Your final score is: " + score;
+   
 }
 
-submitAnsBtn.addEventListener("click", calculateScore);
+quizForm.addEventListener("submit", calculateScore);
